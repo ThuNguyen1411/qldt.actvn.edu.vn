@@ -18,7 +18,7 @@ class RegistrationOfSubjectsCest
         $I->wantToTest("Show all class you can registration");
         $I->showAllClass($I);
 
-        $I->wantToTest("Filter classes without duplication of time");
-        $I->doFilterClassesWithoutDuplicationOfTime($I);
+        //$I->wantToTest("Filter classes without duplication of time");
+        //$I->doFilterClassesWithoutDuplicationOfTime($I);
     }
 }

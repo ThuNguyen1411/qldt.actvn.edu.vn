@@ -17,6 +17,7 @@ class RegistrationOfSubjectsStep extends AdminStep
     {
         $I = $this;
         $I->amOnPage(RegistrationOfSubjectsPage::$URL1);
+        $I->wait(2);
         $I->seeInPopup(RegistrationOfSubjectsPage::$mess);
         $I->acceptPopup(); //OK
         $I->wait(2);
@@ -41,10 +42,11 @@ class RegistrationOfSubjectsStep extends AdminStep
         $I->wait(2);
     }
 
+    /*
     public function doFilterClassesWithoutDuplicationOfTime(\AcceptanceTester $I)
     {
         $I = $this;
         $I->doRegistrationOfSubject();
 
-    }
+    }*/
 }
