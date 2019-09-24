@@ -1,0 +1,859 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html xmlns="http://www.w3.org/1999/xhtml"><head>
+    <title>.: Ðăng ký môn học :.</title>
+    <meta name="GENERATOR" content="Microsoft Visual Studio .NET 7.1" />
+    <meta name="CODE_LANGUAGE" content="C#" />
+    <meta name="vs_defaultClientScript" content="JavaScript" />
+    <meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+    <meta http-equiv="Page-Exit" content="progid:DXImageTransform.Microsoft.Fade(duration=.5)" />	
+    <meta http-equiv="cache-control" content="no-cache" />
+	<link href="../Includes/Default.css" type="text/css" rel="stylesheet" />
+	<script src="../Includes/Default.js" type="text/javascript"></script>
+	<script src="../Includes/util.js" type="text/javascript"></script>
+	<script src="../Includes/StudyRegister.js" type="text/javascript"></script>
+	<script src="RgsScript/StudentRgs.js" type="text/javascript"></script>
+	<script>
+	    //window.history.forward(window.history.length);
+	    history.pushState(null, null, document.URL);
+	    window.addEventListener('popstate', function () {
+	        history.pushState(null, null, document.URL);
+	    });
+	</script>
+  </head>
+  <body bgproperties="fixed" leftmargin="5" topmargin="0" rightmargin="5" onload="PageLoad();">	  
+    <form method="post" action="./StudyRegister.aspx" id="Form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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MTFBNDAwREI1MkIxNzVDOEIzIDkwRjhBNDRBMUNERDQ0NUM4NjUzNzY4NzFGODlEQzhCIDM1RTRCQ0Y0RUIzQjQzMUQ4Q0U3NDg2OEQwMUE4RkZEIDIzRDI4NkE1REIwNjQ5ODhBMzc0NjQ3Q0NBNERERTM5IDNBMDczNUFCNEQxNTRFN0Q4NEVCQTNCQzZDMkQ0NUJCFQkAATEBMQExATEBMQExATEBMRQrAwlnZ2dnZ2dnZ2cWAWZkAmwPEA8WBh8DBQhUaW5oVGllbh8CBQlTdHVkeU1vZGUfBGdkEBUJAy0tLQEwATABMAEwATABMAEwATAVCQABMQExATEBMQExATEBMQExFCsDCWdnZ2dnZ2dnZxYBZmQCbg8QZGQWAGQCcA8QDxYEHwMFBEF5SWQfBGdkEBUBABUBIEIwOEI1NDcwQjdFOTQ0NjY5MzU5NUVGOEIzRTkzOUJCFCsDAWcWAWZkAnYPD2QWAh4Hb25jbGljawUtaWYoUHJlVmlldygpKSByZXR1cm4gdHJ1ZTsgZWxzZSByZXR1cm4gZmFsc2U7ZAJ+Dw8WAh8ABUBC4bqhbiDEkcOjIMSRxINuZyBrw70gMTggVEMgdHLDqm4gdOG7lW5nIHPhu5EgdOG7kWkgdGhp4buDdSAwIFRDZGQChgEPPCsACwIADxYIHghEYXRhS2V5cxYAHgtfIUl0ZW1Db3VudGYeCVBhZ2VDb3VudAIBHhVfIURhdGFTb3VyY2VJdGVtQ291bnRmZAE8KwAJAQY8KwAEAQAWAh8GZ2QCiwEPDxYCHwAFIDZDQzc5Qjc5NTlGRDRDNEFBMEUxOTEwN0U5M0JBMUMwZGQCjQEPDxYCHwAFIEIwOEI1NDcwQjdFOTQ0NjY5MzU5NUVGOEIzRTkzOUJCZGQCkQEPDxYCHwAFAkZJZGQCmwEPDxYCHwAFIDNiNmMwYjY3Mzk5ODRjYzdhYjU0NWFlOTQzMDU1MjRiZGQCnwEPDxYCHwAFATBkZAKjAQ8PFgIfAAUBMWRkAqUBDw8WAh8ABeYBNDgxNzQ5QUY4RUZGNDRFNUJEOTI5QUE1RTE1RDQ2RjcBNDFBNzdEMUEwN0UzNDMyMzgxREJFODNDRjU0RUJCNjgBQThGMkQzNUE3RjI4NEQ0NEIxMEFDOTNERUE0QkVDRUUBRDBBRUI0MkE5OUIzNEQxMUE0MDBEQjUyQjE3NUM4QjMBOTBGOEE0NEExQ0RENDQ1Qzg2NTM3Njg3MUY4OURDOEIBMjNEMjg2QTVEQjA2NDk4OEEzNzQ2NDdDQ0E0RERFMzkBM0EwNzM1QUI0RDE1NEU3RDg0RUJBM0JDNkMyRDQ1QkJkZAKwAQ8PFgIfBmgWAh8HBS9pZihQcmVVcGRhdGUoKSkgcmV0dXJuIHRydWU7IGVsc2UgcmV0dXJuIGZhbHNlO2QCsgEPD2QWAh8HBS9pZihQcmVVcGRhdGUoKSkgcmV0dXJuIHRydWU7IGVsc2UgcmV0dXJuIGZhbHNlO2QCtgEPDxYCHwZoZGQCuAEPPCsACwIADxYIHwgWAB8JAgcfCgIBHwsCB2QBPCsADAEGPCsABAEAFgIfBmcWAmYPZBYQAgEPZBYYZg8PFgIfAAUBMWRkAgEPZBYSAgMPDxYCHwAFIGE4NmI5ZmE1M2MxNDQ4MGU5NDA1ZDFkYmVjODUxNGFmZGQCBQ8PFgIfAAUBMGRkAgcPDxYCHwAFIDQ4MTc0OUFGOEVGRjQ0RTVCRDkyOUFBNUUxNUQ0NkY3ZGQCCQ8PFgIfAAUgRDM2NTNCMTZBQzJFNDY3NkE5NTEzRkExRTlDQTAzNjlkZAIKDxUBIDQ4MTc0OUFGOEVGRjQ0RTVCRDkyOUFBNUUxNUQ0NkY3ZAILDw8WAh8ABQEwZGQCDQ8PFgIfAAUBMGRkAg8PDxYCHwAFIjEwOTJERURCRjEyM0YyNDk0NEJBNzNEQjgxRTU2NUU0MjFkZAIRDw8WAh4PQ29tbWFuZEFyZ3VtZW50BUFCMDhCNTQ3MEI3RTk0NDY2OTM1OTVFRjhCM0U5MzlCQkNEQTczMjQ5NzA3NTQ2NzQ5NzQ1RjAwQTAyMUFENTRGMGRkAgIPZBYCAgEPDxYCHwAFLUFuIHRvw6BuIGPGoSBz4bufIGThu68gbGnhu4d1LTEtMTkgKEFUMTNOLTAyKWRkAgMPZBYCAgEPDxYCHwAFB0FUQVRUTTJkZAIED2QWBAIBDw8WAh8ABcsBVOG7qyAyNS8xMS8yMDE5IMSR4bq/biAyMi8xMi8yMDE5Ojxicj4mbmJzcDsmbmJzcDsmbmJzcDs8Yj5UaOG7qSAzIHRp4bq/dCA0LDUsNiAoTFQpPC9iPjxicj4mbmJzcDsmbmJzcDsmbmJzcDs8Yj5UaOG7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bGU9IkZMT0FUOmxlZnQ7UEFERElORy1UT1A6NnB4Ij5JbiB0cmFuZyBuw6B5PC9kaXY+PC9hPjxhIGhyZWY9Im1haWx0bzo/c3ViamVjdD1IZSB0aG9uZyB0aG9uZyB0aW4gSVUmYW1wO2JvZHk9aHR0cDovL3FsZHQuYWN0dm4uZWR1LnZuL0NNQ1NvZnQuSVUuV2ViLmluZm8vU3R1ZHlSZWdpc3Rlci9TdHVkeVJlZ2lzdGVyLmFzcHgiPjxkaXYgc3R5bGU9IkZMT0FUOmxlZnQiPjxpbWcgc3JjPSIvQ01DU29mdC5JVS5XZWIuSW5mby9pbWFnZXMvc2VuZGVtYWlsLnBuZyIgIGJvcmRlcj0iMCI+PC9kaXY+PGRpdiBzdHlsZT0iRkxPQVQ6bGVmdDtQQURESU5HLVRPUDo2cHgiPkfhu61pIGVtYWlsIHRyYW5nIG7DoHk8L2Rpdj48L2E+PGEgaHJlZj0iIyIgb25jbGljaz0iamF2YXNjcmlwdDphZGRmYXYoKSI+PGRpdiBzdHlsZT0iRkxPQVQ6bGVmdCI+PGltZyBzcmM9Ii9DTUNTb2Z0LklVLldlYi5JbmZvL2ltYWdlcy9hZGR0b2Zhdm9yaXRlcy5wbmciICBib3JkZXI9IjAiPjwvZGl2PjxkaXYgc3R5bGU9IkZMT0FUOmxlZnQ7UEFERElORy1UT1A6NnB4Ij5UaMOqbSB2w6BvIMawYSB0aMOtY2g8L2Rpdj48L2E+ZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgcFHmdyaWRSZWdpc3RlcmVkJGN0bDAyJGNoa0RlbGV0ZQUeZ3JpZFJlZ2lzdGVyZWQkY3RsMDMkY2hrRGVsZXRlBR5ncmlkUmVnaXN0ZXJlZCRjdGwwNCRjaGtEZWxldGUFHmdyaWRSZWdpc3RlcmVkJGN0bDA1JGNoa0RlbGV0ZQUeZ3JpZFJlZ2lzdGVyZWQkY3RsMDYkY2hrRGVsZXRlBR5ncmlkUmVnaXN0ZXJlZCRjdGwwNyRjaGtEZWxldGUFHmdyaWRSZWdpc3RlcmVkJGN0bDA4JGNoa0RlbGV0ZUmISSa16SW3P4E+0DzZaqJSXuUtcNnCFkB/E5tPED6d" />
+</div>
+
+<script type="text/javascript">
+//&lt;![CDATA[
+var theForm = document.forms['Form1'];
+if (!theForm) {
+    theForm = document.Form1;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]&gt;
+</script>
+
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EA1EB2D4" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="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" />
+</div>
+		
+<style>
+	.notify { BORDER-BOTTOM: #336699 1px solid; POSITION: fixed; MIN-WIDTH: 300px; BORDER-LEFT: #336699 1px solid; PADDING-BOTTOM: 8px; BACKGROUND-COLOR: #ffd700; MIN-HEIGHT: 100px; PADDING-LEFT: 8px; BOTTOM: 10px; PADDING-RIGHT: 8px; COLOR: red; BORDER-TOP: #336699 1px solid; RIGHT: 10px; BORDER-RIGHT: #336699 1px solid; PADDING-TOP: 8px; z-index:99999 }
+	.notifimg { POSITION: fixed; BOTTOM: 10px; RIGHT: 10px; z-index:99999 }
+</style>
+
+<div id="headerright">
+	<div id="header">
+		<div style="POSITION: absolute;FONT-FAMILY: -webkit-body;COLOR: white;FONT-SIZE: 18px;TOP: 32px;FONT-WEIGHT: bold;LEFT: 8px">
+			<span id="PageHeader1_lblWebtitle">HỌC VIỆN KỸ THUẬT MẬT MÃ</span></div>
+		<span id="navbar"><a href="/CMCSoft.IU.Web.Info/Home.aspx">Trang chủ</a> |
+			<a id="PageHeader1_SignOut_ibnLogout" href="javascript:__doPostBack('PageHeader1$SignOut$ibnLogout','')" style="color:White;">Thoát</a>
+
+			| <a href="./support/default.aspx" target="_blank">Hỏi đáp</a> | <a href="/CMCSoft.IU.Web.Info/WebHelp/NewProject1.htm" target="_blank">
+				Trợ giúp</a>
+			<select name="PageHeader1$drpNgonNgu" onchange="javascript:setTimeout('__doPostBack(\'PageHeader1$drpNgonNgu\',\'\')', 0)" id="PageHeader1_drpNgonNgu" style="width:50px;Z-INDEX: 0">
+	<option selected="selected" value="E43296C6F24C4410A894F46D57D2D3AB">VN</option>
+	<option value="ABAF46BD671247C5B5B52885BB2F9C49">EN</option>
+
+</select>
+		</span>
+		<div id="box_size"><!--
+			<a href="javascript:decreaseFontSize();">
+				<h4 id="decreaseFontSize"></h4>
+			</a><a href="javascript:increaseFontSize();">
+				<h4 id="increaseFontSize"></h4>
+			</a>
+		--><span id="ur" style="FONT-SIZE: 14px; FONT-WEIGHT: bold"></span></div>
+		<div id="box_user">
+			<div style="WIDTH: 5px; DISPLAY: none; FLOAT: left; HEIGHT: 40px; PADDING-TOP: 2px">
+				<img id="PageHeader1_imgUser" src="/CMCSoft.IU.Web.Info/Images/UserInfo.gif" style="border-width:0px;DISPLAY: block; FLOAT: left" /></div>
+			<div id="PageHeader1_Panel1" style="width:400px;TEXT-ALIGN: right; MARGIN-TOP: 2px">
+	
+				<p>
+					<span id="PageHeader1_lblUserFullName" style="color:Blue;font-size:10px;font-weight:bold;">Nguyễn Xuân Anh Thư(AT131341)</span>
+					<span id="PageHeader1_lblRoleTitle">Vai trò:</span>
+					<span id="PageHeader1_lblUserRole" style="color:Blue;font-size:10px;">Sinh viên</span>
+					
+					<a id="PageHeader1_lbNewmessage" href="javascript:__doPostBack('PageHeader1$lbNewmessage','')" style="color:Blue;background-color:Transparent;FONT-SIZE: 10px">Hộp tin nhắn</a></p>
+			
+</div></div>
+		<div id="datetime" style="DISPLAY: none">[
+			<span id="PageHeader1_lblDatetime" style="font-weight:bold;">Datetime</span>]</div>
+		<div id="navigator">
+			<span id="PageHeader1_lblNavi">Đăng ký học <span style="font-size:10px">&gt;</span> <a href="/CMCSoft.IU.Web.info/StudyRegister/StudyRegister.aspx">Đăng ký học</a></span></div>
+	</div>
+</div>
+<input name="PageHeader1$hidisNotify" type="hidden" id="PageHeader1_hidisNotify" value="0" />
+<input name="PageHeader1$hidValueNotify" type="hidden" id="PageHeader1_hidValueNotify" value="." />
+<div class="notify" id="notify" style="DISPLAY:none">
+</div>
+<img class="notifimg" id="notifimg" src="new_icon.gif" style="DISPLAY:none" />
+<script type="text/javascript">
+			checkNotify();
+			function checkNotify()
+			{
+				var isNotify = "0";
+				isNotify = document.getElementById("PageHeader1_hidisNotify").value;
+				if (isNotify=="1")
+				{						
+					try {
+						//viet ham kiem tra
+						if(document.getElementById("PageHeader1_hidValueNotify") != undefined)
+						{
+							var hidValue = document.getElementById("PageHeader1_hidValueNotify").value;
+							if (hidValue == null)
+							{
+								hidValue = "";
+							}				
+							document.getElementById("notify").style.display = "";
+							document.getElementById("notifimg").style.display = "";
+							document.getElementById("notify").innerHTML = hidValue;
+						}
+					}
+					catch(err) {
+						document.getElementById("demo").innerHTML = err.message;
+					}
+					
+				}
+			}
+</script>
+
+		
+			<table id="Table3" cellspacing="0" cellpadding="0" width="100%" border="0">
+				<tbody><tr>
+					<td valign="top" width="90%" height="100%" rowspan="2">
+						<table id="Table9" height="100%" cellspacing="0" cellpadding="0" width="100%">
+							<tbody><tr>
+								<td style="FILTER:progid:DXImageTransform.Microsoft.Gradient(startColorStr='#0a6cce', endColorStr='#ffffff', gradientType='1')" align="center"><span class="cssPageTitle">Ðăng ký môn học</span></td>
+							</tr>
+						</tbody></table>
+					</td>
+				</tr>
+				<tr>
+					<td><a id="GoHome1_ibnGoHome" href="javascript:__doPostBack('GoHome1$ibnGoHome','')" style="color:White;">Trang chủ</a>
+</td>
+					<td><a id="Signout2_ibnLogout" href="javascript:__doPostBack('Signout2$ibnLogout','')" style="color:White;">Thoát</a>
+</td>
+				</tr>
+			</tbody></table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0">
+				<tbody><tr>
+					<td id="tdParameter" class="tableblue">			
+					<table width="100%" border="0" cellspacing="1" cellpadding="0">
+						<tbody><tr>
+							<td class="labelHeader" width="150" height="20"><span id="lblMinCreditTitle">Số TC tối thiểu cần ĐK:</span></td>
+							<td class="labelContent" width="100"><span id="lblMinCredit">0</span></td>
+							<td class="labelHeader" width="230"><span id="lblMaxCreditTitle">Số TC tối đa được phép ĐK:</span></td>
+							<td class="labelContent" width="120"><span id="lblMaxCredit">Không hạn chế</span><span id="lblSecondFieldMaxCredit"></span>
+								
+							</td>
+							<td class="labelHeader" width="140"> </td>
+							<td class="labelContent">
+                                
+                                
+                                 
+                                
+                                 </td>
+						</tr>
+						<tr>
+							<td class="labelHeader" width="150"></td>
+							<td class="labelContent" width="100"></td>
+							<td class="labelHeader" width="230"></td>
+							<td class="labelContent" width="120">
+								
+							</td>
+							<td class="labelHeader" width="140"></td>
+							<td class="labelContent"></td>
+						</tr>	
+                      		
+						<tr>
+							<td class="labelHeader" width="150" height="20"><span id="lblHanCheSoSVToiDa">Hạn chế số SV tối đa :</span></td>
+							<td class="labelContent" width="100"><span id="lblMaxStudent">Có</span></td>
+							<td class="labelHeader" width="230"><span id="lableMultiField">Cho phép đ.ký ngoài ngành :</span></td>
+							<td class="labelContent" width="120"><span id="lblMultiField">Không</span></td>
+							<td colspan="2" class=""><span class="labelHeader"><span id="lableDailyRgsDuration">Hạn đăng ký : </span></span>
+                                
+                                <span id="lblStartHourTitle" class="labelcontent">18h, </span>
+                                <span id="lblDuration" class="labelcontent">03/07/2019 -&gt; 10/7/2019</span>
+								
+								
+							</td>							
+						</tr>	
+						<tr>
+							<td class="labelHeader" height="20"><span id="lblTuitionCheckTitle">Kiểm tra học phí :</span></td>
+							<td class="labelContent"><span id="lblTuitionCheck">Có</span></td>
+							<td colspan="4" class=""><span id="lblTuitionTerm" class="labelcontent" style="color:Green;"></span><span id="lblStudentAcountBalance" class="labelcontent" style="color:Red;">Bạn không còn tiền dư: <span style="color:blue">0</span>, Hệ số miễn giảm: <span style="color:blue">%</span></span></td>							
+						</tr>	
+					</tbody></table>
+					<input name="hidMode" type="hidden" id="hidMode" value="0" style="WIDTH: 28px; HEIGHT: 19px" size="1" />					
+					<table cellspacing="1" cellpadding="0" width="100%" border="0">
+						<tbody><tr>
+							<td class="labelheader" width="130" style="color:red"><span id="lblTKB">Thời khóa biểu khóa :</span></td>
+							<td width="100px"><select name="drpAcademicYear" onchange="javascript:setTimeout('__doPostBack(\'drpAcademicYear\',\'\')', 0)" id="drpAcademicYear">
+	<option selected="selected" value="B08B5470B7E9446693595EF8B3E939BB">AT13</option>
+	<option value="6F36E44FB3CF4EA2BC11D05AF2523361">AT14</option>
+	<option value="892CBD1FE3A54544A2AC9725C7545606">AT15</option>
+	<option value="1655BDBE09F24B37871FE727275D23A9">AT16</option>
+
+</select></td>								
+							<td class="labelheader" width="50" style="color:red"><span id="lableField">Ngành :</span></td>
+							<td width="100px"><select name="drpField" onchange="javascript:setTimeout('__doPostBack(\'drpField\',\'\')', 0)" id="drpField">
+	<option selected="selected" value="CDA73249707546749745F00A021AD54F">AT13 - An toàn thông tin</option>
+
+</select>
+								
+							</td>
+							<td> </td>
+						</tr>
+					</tbody></table>					
+					</td>
+				</tr>
+				<tr>
+					<td align="right"><img src="../Images/3DTriUp.gif" id="imgShowParam" onclick="ShowParameter(this);" style="cursor:hand;" title="Xem tham số đăng ký học" /></td>
+				</tr>
+			</tbody></table>
+			<table id="Table1" cellspacing="0" cellpadding="0" width="100%" border="0">
+				<tbody><tr>
+					<td class="listtitle" align="center" height="30"><span id="lblStudent">AT131341 - Nguyễn Xuân Anh Thư - Ngành An toàn thông tin - AT13</span>
+					</td>
+				</tr>
+				<tr>
+					<td align="center"><span id="lblStudyRankTitle" class="labelHeader">Tình trạng học lực: </span><span id="lblStudyRank" class="labelcontent" style="color:Red;"></span></td>
+				</tr>
+				<tr>
+					<td class="listtitle" align="center" height="30" style="FONT-SIZE: 17pt; COLOR: darkgreen">
+						<span id="lblTitle">Danh sách lớp học phần có thể đăng ký học kỳ 1 năm học 2019_2020 đợt học 1</span>									
+					</td>
+				</tr>
+				<tr><td align="center" class="labelheader" height="20"><span id="lableGuid">Những lớp học phần thuộc cùng một dải màu liên tiếp dạy cùng một học phần, chỉ được chọn không quá 1 lớp</span></td></tr>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="1" cellpadding="0">
+							<tbody><tr>
+								<td class="labelheader" width="90"><span id="lblSelectCourse">Chọn học phần:</span></td>
+								<td width="250">
+									<select name="drpCourse" id="drpCourse">
+	<option value="">Chọn học phần để hiển thị các lớp học</option>
+	<option value="481749AF8EFF44E5BD929AA5E15D46F7">An toàn cơ sở dữ liệu (2 TC)</option>
+	<option value="41A77D1A07E3432381DBE83CF54EBB68">An toàn hệ điều hành (3 TC)</option>
+	<option value="A8F2D35A7F284D44B10AC93DEA4BECEE">Cơ sở an toàn thông tin (3 TC)</option>
+	<option value="D0AEB42A99B34D11A400DB52B175C8B3">Cơ sở lý thuyết mật mã (3 TC)</option>
+	<option value="90F8A44A1CDD445C865376871F89DC8B">Giám sát mạng máy tính (môn thay thế) (2 TC)</option>
+	<option value="35E4BCF4EB3B431D8CE74868D01A8FFD">Lập trình hệ thống nhúng (có thể thay thế) (2 TC)</option>
+	<option value="23D286A5DB064988A374647CCA4DDE39">Quản lý và xây dựng chính sách ATTT (2 TC)</option>
+	<option value="3A0735AB4D154E7D84EBA3BC6C2D45BB">Thực tập cơ sở chuyên ngành (3 TC)</option>
+
+</select>
+									
+									<select name="drpCourseMark" id="drpCourseMark" style="width:0px;display:none">
+
+</select>
+									
+									
+									
+								</td>
+								<td class="labelheader" width="100"><span id="labelDate">Chọn ngày học  :</span></td>
+								<td><select name="drpWeekDay" id="drpWeekDay">
+	<option value="0">Cả tuần</option>
+	<option value="2">Thứ 2</option>
+	<option value="3">Thứ 3</option>
+	<option value="4">Thứ 4</option>
+	<option value="5">Thứ 5</option>
+	<option value="6">Thứ 6</option>
+	<option value="7">Thứ 7</option>
+	<option value="8">Chủ nhật</option>
+
+</select>								
+									<input type="submit" name="btnViewCourseClass" value="Hiển thị lớp" onclick="if(PreView()) return true; else return false;" id="btnViewCourseClass" style="color:Red;font-weight:bold;width:80px;" />									
+								</td>								
+								<td align="right"><input type="submit" name="btnViewFilterCourseClass" value="Lọc lớp không trùng thời gian" id="btnViewFilterCourseClass" style="color:Red;font-weight:bold;width:170px;" /></td>
+							</tr>							
+						</tbody></table>
+					</td>					
+				</tr>
+				<tr>
+					<td>
+						<table width="100%" border="0" cellspacing="0" cellpadding="0">
+							<tbody><tr>
+								<td height="20"><span id="lblCourseTuition" class="labelcontent" style="color:DarkGreen;"></span>
+								<span id="lblCourseTuitionKP" class="labelcontent" style="color:DarkGreen;"></span></td>
+								<td align="right">
+									<span id="lblTotalCredit" class="labelcontent" style="color:Blue;">Bạn đã đăng ký 18 TC trên tổng số tối thiểu 0 TC</span>
+									<span id="lblSemesterTotalCredit" class="labelcontent" style="color:DarkGreen;"></span>
+									
+								</td>
+								<td align="right" width="80px"><input type="submit" name="btnResult" value="In kết quả" id="btnResult" style="color:Red;font-weight:bold;width:80px;" /></td>
+							</tr>
+						</tbody></table>
+					</td>					
+				</tr>
+				<tr>
+					<td class="tableborder" height="300">
+						<div style="OVERFLOW: auto; WIDTH: 100%; HEIGHT: 100%"><table cellspacing="0" cellpadding="0" rules="all" id="gridRegistration" style="border-color:RosyBrown;border-width:1px;border-style:Solid;width:100%;border-collapse:collapse;">
+	<tbody><tr class="DataGridFixedHeader" align="center" style="color:White;height:20px;">
+		<td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:3%;">
+											<label><b>STT</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:5%;">Chọn</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:27%;">
+											<label><b>Lớp học phần</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:9%;">
+											<label><b>Học phần</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;">
+											<label><b>Thời gian</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:13%;">
+											<label><b>Địa điểm</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:10%;">
+											<label><b>Giảng viên</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:6%;">
+											<label title="Số SV tối da được phép đăng ký"><b>Sĩ số</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:6%;">
+											<label title="Số SV đã đăng ký"><b>Ðã ÐK</b></label>
+										</td>
+	</tr>
+</tbody></table><span id="lblAvailableCourseClass" class="listTitle"></span></div>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#003399" height="3"></td>
+				</tr>
+			</tbody></table>
+			<table id="Table2" cellspacing="0" cellpadding="0" width="100%" border="0" class="tableblue">
+				<tbody><tr>
+					<td style="WIDTH: 100%" align="right" width="100%" height="30" class="labelcontent">
+						
+						
+												
+						<input name="hidFieldId" type="hidden" id="hidFieldId" style="WIDTH: 28px; HEIGHT: 19px" size="1" value="CDA73249707546749745F00A021AD54F" />
+													
+						<input name="hidSemester" type="hidden" id="hidSemester" style="WIDTH: 28px; HEIGHT: 19px" size="1" value="2019_2020_1" />
+						
+						
+						
+													
+						<input name="hidTerm" type="hidden" id="hidTerm" style="WIDTH: 28px; HEIGHT: 19px" size="1" value="1" />
+													
+						<input name="hidCourseId" type="hidden" id="hidCourseId" style="WIDTH: 28px; HEIGHT: 19px" size="1" />
+						
+																									
+						<input name="hidMultiStudyType" type="hidden" id="hidMultiStudyType" style="WIDTH: 28px; HEIGHT: 19px" size="1" />
+						<input name="hidMaxPeriod" type="hidden" id="hidMaxPeriod" style="WIDTH: 28px; HEIGHT: 19px" size="1" />
+						<input name="hidCourseTuition" type="hidden" id="hidCourseTuition" style="WIDTH: 28px; HEIGHT: 19px" size="1" />
+						<input name="hidMaxPeriodMode" type="hidden" id="hidMaxPeriodMode" style="WIDTH: 28px; HEIGHT: 19px" size="1" /><span id="labelGuidReg"> lớp trên cột "Chọn" rồi nhấn nút "Ðăng ký", xem kết quả bên dưới) </span>
+						 
+						 
+						<input id="btnUpgradeMark" type="button" value="Học nâng điểm" onclick="UpgradeMark();" style="FONT-WEIGHT: bold; DISPLAY: none; VISIBILYTY: hidden;" /></td>
+				</tr>
+				<tr>
+					<td class="listtitle" align="center" width="100%" style="FONT-SIZE: 17pt; COLOR: darkgreen"><span id="labelListCourseClassReg">Danh sách lớp học phần đã đăng ký</span></td>
+				</tr>
+				<tr>
+					<td align="center" width="100%"></td>
+				</tr>
+			</tbody></table>
+			<table id="Table4" cellspacing="1" cellpadding="0" width="100%" border="0">
+				<tbody><tr>
+					<td class="tableborder" height="300">
+						<div style="OVERFLOW: auto; WIDTH: 100%; HEIGHT: 100%"><table cellspacing="0" cellpadding="0" rules="all" id="gridRegistered" style="border-color:RosyBrown;border-width:1px;border-style:Solid;width:100%;border-collapse:collapse;">
+	<tbody><tr class="DataGridFixedHeader" align="center" style="height:20px;">
+		<td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:3%;">STT</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:5%;">Hủy</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:18%;">
+											<label><b>Lớp học phần</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:9%;">
+											<label><b>Học phần</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;">
+											<label><b>Thời gian</b></label>
+										</td><td class="cssListHeader" style="color:White;font-weight:bold;height:20px;width:10%;">
+											<label><b>Ðịa điểm</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:10%;">
+											<label><b>Giảng viên</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:6%;">
+											<label><b>Sĩ số</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:6%;">
+											<label><b>Ðã ÐK</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:5%;">
+											<label><b>Số TC</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;width:7%;">
+											<label><b>Học phí</b></label>
+										</td><td class="cssListHeader" align="center" style="color:White;font-weight:bold;height:20px;">
+											<label><b>G.chú</b></label>
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">1</td><td align="center">
+											<input id="gridRegistered_chkDelete_0" type="checkbox" name="gridRegistered$ctl02$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="481749AF8EFF44E5BD929AA5E15D46F7" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_0" href="javascript:__doPostBack('gridRegistered$ctl02$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_0">An toàn cơ sở dữ liệu-1-19 (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_0">ATATTM2</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_0">Từ 25/11/2019 đến 22/12/2019:<br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />   <b>Thứ 5 tiết 4,5,6 (LT)</b><br />   <b>Thứ 6 tiết 10,11,12 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_0"> 502-TH T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_0"></span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_0">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_0">66</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_0">2</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_0"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_0"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">2</td><td align="center">
+											<input id="gridRegistered_chkDelete_1" type="checkbox" name="gridRegistered$ctl03$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="41A77D1A07E3432381DBE83CF54EBB68" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_1" href="javascript:__doPostBack('gridRegistered$ctl03$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_1">An toàn hệ điều hành-1-19 (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_1">ATATAT1</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_1">Từ 05/08/2019 đến 17/11/2019: <b>(1)</b><br />   <b>Thứ 3 tiết 1,2,3 (LT)</b><br />Từ 25/11/2019 đến 29/12/2019: <b>(2)</b><br />   <b>Thứ 3 tiết 1,2,3 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_1"><b>(1)</b><br /> 401 T7AT<br /><b>(2)</b><br /> 301 T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_1"></span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_1">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_1">66</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_1">3</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_1"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_1"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">3</td><td align="center">
+											<input id="gridRegistered_chkDelete_2" type="checkbox" name="gridRegistered$ctl04$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="A8F2D35A7F284D44B10AC93DEA4BECEE" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_2" href="javascript:__doPostBack('gridRegistered$ctl04$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_2">Cơ sở an toàn thông tin-1-19 (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_2">ATATKH1</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_2">Từ 14/10/2019 đến 03/11/2019: <b>(1)</b><br />   <b>Thứ 2 tiết 4,5,6 (LT)</b><br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />   <b>Thứ 5 tiết 4,5,6 (LT)</b><br />   <b>Thứ 6 tiết 4,5,6 (LT)</b><br />Từ 04/11/2019 đến 10/11/2019: <b>(2)</b><br />   <b>Thứ 2 tiết 4,5,6 (LT)</b><br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />   <b>Thứ 5 tiết 4,5,6 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_2"> 504-TH T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_2">Nguyễn Thị Hồng Hà</span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_2">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_2">66</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_2">3</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_2"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_2"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">4</td><td align="center">
+											<input id="gridRegistered_chkDelete_3" type="checkbox" name="gridRegistered$ctl05$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="D0AEB42A99B34D11A400DB52B175C8B3" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_3" href="javascript:__doPostBack('gridRegistered$ctl05$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_3">Cơ sở lý thuyết mật mã-1-19 (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_3">ATATKH2</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_3">Từ 30/09/2019 đến 13/10/2019: <b>(1)</b><br />   <b>Thứ 3 tiết 10,11,12 (LT)</b><br />   <b>Thứ 4 tiết 1,2,3 (LT)</b><br />   <b>Thứ 4 tiết 7,8,9 (LT)</b><br />   <b>Thứ 5 tiết 10,11,12 (LT)</b><br />Từ 14/10/2019 đến 20/10/2019: <b>(2)</b><br />   <b>Thứ 3 tiết 10,11,12 (LT)</b><br />   <b>Thứ 4 tiết 1,2,3 (LT)</b><br />   <b>Thứ 4 tiết 7,8,9 (LT)</b><br />   <b>Thứ 5 tiết 10,11,12 (LT)</b><br />Từ 21/10/2019 đến 03/11/2019: <b>(3)</b><br />   <b>Thứ 3 tiết 10,11,12 (LT)</b><br />   <b>Thứ 4 tiết 1,2,3 (LT)</b><br />   <b>Thứ 5 tiết 10,11,12 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_3"> 504-TH T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_3">Hoàng Đức Thọ</span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_3">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_3">68</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_3">3</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_3"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_3"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">5</td><td align="center">
+											<input id="gridRegistered_chkDelete_4" type="checkbox" name="gridRegistered$ctl06$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="90F8A44A1CDD445C865376871F89DC8B" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_4" href="javascript:__doPostBack('gridRegistered$ctl06$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_4">Giám sát mạng máy tính (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_4">ATCTKM11</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_4">Từ 05/08/2019 đến 08/09/2019: <b>(1)</b><br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />   <b>Thứ 5 tiết 4,5,6 (LT)</b><br />Từ 09/09/2019 đến 15/09/2019: <b>(2)</b><br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />Từ 16/09/2019 đến 22/09/2019: <b>(3)</b><br />   <b>Thứ 3 tiết 4,5,6 (LT)</b><br />   <b>Thứ 5 tiết 4,5,6 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_4"> 301 T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_4"></span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_4">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_4">66</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_4">2</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_4"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_4"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">6</td><td align="center">
+											<input id="gridRegistered_chkDelete_5" type="checkbox" name="gridRegistered$ctl07$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="23D286A5DB064988A374647CCA4DDE39" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_5" href="javascript:__doPostBack('gridRegistered$ctl07$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_5">Quản lý và xây dựng chính sách ATTT-1-19 (AT13N-02)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_5">ATATKH5</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_5">Từ 04/11/2019 đến 17/11/2019: <b>(1)</b><br />   <b>Thứ 4 tiết 1,2,3,4,5 (LT)</b><br />Từ 25/11/2019 đến 15/12/2019: <b>(2)</b><br />   <b>Thứ 4 tiết 1,2,3,4,5 (LT)</b><br />Từ 16/12/2019 đến 22/12/2019: <b>(3)</b><br />   <b>Thứ 4 tiết 1,2,3,4,5,6 (LT)</b><br />Từ 23/12/2019 đến 29/12/2019: <b>(4)</b><br />   <b>Thứ 4 tiết 1,2,3,4,5 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_5"> 401 T7AT</span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_5"></span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_5">60</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_5">67</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_5">2</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_5"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_5"></span>												
+										</td>
+	</tr><tr class="cssRangeItem3" style="height:20px;">
+		<td align="center">7</td><td align="center">
+											<input id="gridRegistered_chkDelete_6" type="checkbox" name="gridRegistered$ctl08$chkDelete" onclick="CancelCourseClass(this);" />
+											
+											
+											
+                                            
+											<input type="hidden" id="hidRgsCourseId" value="3A0735AB4D154E7D84EBA3BC6C2D45BB" />
+											
+											
+                                            
+                                            <br />
+                                            <a id="gridRegistered_lnkDoiLop_6" href="javascript:__doPostBack('gridRegistered$ctl08$lnkDoiLop','')" style="font-weight:bold;">Đổi lớp</a>
+										</td><td style="font-weight:bold;">
+											<span id="gridRegistered_lblCourseClass_6">Thực tập cơ sở chuyên ngành-1-19 (AT13N-03)</span>											
+										</td><td>
+											<span id="gridRegistered_lblCourseCode_6">ATCTHT10</span>
+										</td><td>
+											<span id="gridRegistered_lblLongTime_6">Từ 23/09/2019 đến 29/09/2019: <b>(1)</b><br />   <b>Thứ 2 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 2 tiết 1,2,3,4 (LT)</b><br />   <b>Thứ 3 tiết 9,10,11,12 (LT)</b><br />   <b>Thứ 4 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 4 tiết 1,2,3,4 (LT)</b><br />   <b>Thứ 5 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 5 tiết 1,2,3,4,5 (LT)</b><br />   <b>Thứ 6 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 6 tiết 1,2,3,4,5 (LT)</b><br />Từ 30/09/2019 đến 13/10/2019: <b>(2)</b><br />   <b>Thứ 2 tiết 1,2,3,4 (LT)</b><br />   <b>Thứ 2 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 5 tiết 1,2,3,4,5 (LT)</b><br />   <b>Thứ 6 tiết 8,9,10,11,12 (LT)</b><br />   <b>Thứ 6 tiết 1,2,3,4,5 (LT)</b><br /></span>											
+											
+										</td><td>
+											<span id="gridRegistered_lblLocation_6"><b>(1)</b><br />          <br /><b>(2)</b><br />      </span>											
+										</td><td>
+											<span id="gridRegistered_lblInstructor_6"></span>											
+										</td><td align="center">
+											<span id="gridRegistered_lblExpectationStudent_6">70</span>																						
+										</td><td align="center">
+											<span id="gridRegistered_lblCurrentStudent_6">65</span>																																	
+										</td><td align="center">
+											<span id="gridRegistered_lblCourseCredit_6">3</span>														
+																									
+										</td><td align="right">
+											<span id="gridRegistered_lblTuition_6"></span>			
+																							
+										</td><td align="center">
+											<span id="gridRegistered_lblNote_6"></span>												
+										</td>
+	</tr><tr align="center" style="height:20px;">
+		<td> </td><td> </td><td align="center">
+											<b>Tổng</b>
+										</td><td> </td><td> </td><td> </td><td> </td><td> </td><td> </td><td align="center" style="font-weight:bold;">18</td><td align="right" style="font-weight:bold;">0</td><td align="center" style="font-weight:bold;"> </td>
+	</tr>
+</tbody></table></div>
+					</td>
+				</tr>
+				<tr>
+					<td bgcolor="#003399" height="3"></td>
+				</tr>
+			</tbody></table>
+			<table id="Table5" cellspacing="1" cellpadding="0" width="100%" border="0" class="tableblue">
+				<tbody><tr><td><input type="button" value="In thời khóa biểu" onclick="ViewTimeTable();" style="VISIBILITY: hidden" /> <input type="button" value="In học phí" onclick="ViewTuitionReport();" style="VISIBILITY: hidden" /> <input type="button" value="In bảng đăng ký" onclick="ViewRegistable();" style="VISIBILITY: hidden" /></td>
+					<td align="right" width="100%" height="30" class="labelcontent"><span id="lableGuidCan"> lớp đã đăng ký trên cột "Hủy" rồi nhấn nút) </span></td>
+				</tr>
+			</tbody></table>
+					
+			<input name="hidRegistratedCredit" type="hidden" id="hidRegistratedCredit" value="18" />
+			<input name="hidTotalCredit" type="hidden" id="hidTotalCredit" />
+			<input name="hidCheckMaxCredit" type="hidden" id="hidCheckMaxCredit" value="0" />
+			<input name="hidParamShowMode" type="hidden" id="hidParamShowMode" />
+			<input name="hidMaxCredit" type="hidden" id="hidMaxCredit" />
+			<input name="hidMaxCredit2" type="hidden" id="hidMaxCredit2" />
+			<input name="hidMinCredit" type="hidden" id="hidMinCredit" value="0" />
+			<input name="hidMinCredit2" type="hidden" id="hidMinCredit2" />
+			<input name="hidMaxCredit3" type="hidden" id="hidMaxCredit3" />
+			<input name="hidStudyRank" type="hidden" id="hidStudyRank" />
+			<input name="hidStudyLevel" type="hidden" id="hidStudyLevel" />
+			<input name="hidStudyRankMode" type="hidden" id="hidStudyRankMode" value="0" />
+			
+						
+			<input name="hidCourseCredit" type="hidden" id="hidCourseCredit" />			
+			<input name="hidUpdateMode" type="hidden" id="hidUpdateMode" />			
+			<input name="hidQHSH" type="hidden" id="hidQHSH" />
+						
+						
+						
+						
+						
+				
+					
+												
+			<input name="hidSecondFieldCredit" type="hidden" id="hidSecondFieldCredit" value="0" />
+			<input name="hidSecondFieldMaxCredit" type="hidden" id="hidSecondFieldMaxCredit" />			
+			<input name="hidUpgradeMark" type="hidden" id="hidUpgradeMark" value="0" />
+												
+			
+			<input name="hidAccountBalance" type="hidden" id="hidAccountBalance" value="0" />
+			
+						
+			<input name="hidStudentTypeId" type="hidden" id="hidStudentTypeId" />						
+			<input name="hidTotalTuition" type="hidden" id="hidTotalTuition" value="0" />
+			<input name="hidSocialWelfareExceptId" type="hidden" id="hidSocialWelfareExceptId" />
+						
+			
+			<input name="hidTuitionCheck" type="hidden" id="hidTuitionCheck" value="2" />
+			<input name="hidMucNoHocPhiToiDa" type="hidden" id="hidMucNoHocPhiToiDa" value="0" />
+						
+			<input name="hidLackGroupCourseId" type="hidden" id="hidLackGroupCourseId" />
+						
+						
+						
+					
+			<input name="hidSemesterCheckMode" type="hidden" id="hidSemesterCheckMode" value="0" />	
+			<input name="hidClientNumberOfCourse" type="hidden" id="hidClientNumberOfCourse" value="7" />	
+			
+			<input name="hidConditionMarkValue" type="hidden" id="hidConditionMarkValue" />
+									
+			<input name="hidConditionMarkCode" type="hidden" id="hidConditionMarkCode" />
+									
+									
+												
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+									
+						
+						
+									
+									
+									
+									
+			
+									
+									
+				
+					
+									
+									
+									
+									
+									
+				
+															
+				
+				
+				
+							
+					
+							
+						
+			<input name="hidCheckCourseNoTuition" type="hidden" id="hidCheckCourseNoTuition" value="0" />
+			<input name="hidSecondFieldMaxCreditMode" type="hidden" id="hidSecondFieldMaxCreditMode" value="1" />
+			<input name="hidSecondFieldMaxCreditInclude" type="hidden" id="hidSecondFieldMaxCreditInclude" value="0" />
+            <input name="hidTinhHocPhiSangTacNghiep" type="hidden" id="hidTinhHocPhiSangTacNghiep" value="0" />
+						
+						
+						
+				
+								
+			
+					
+						
+				
+											
+						
+			
+			
+			
+			
+			
+			
+			
+			
+			           
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            <!--
+            -->
+			<span id="lblErrorInfo" style="color:Red;"></span>
+<script language="javascript">
+function addfav()
+   {
+   if (document.all)
+      {
+      window.external.AddFavorite
+      ("http://www.webdevelopersnotes.com","WebDevelopersNotes")
+      }
+   }
+
+</script>
+<div style="float:left;margin-top:60px;width:100%">
+<div id="footer_1" align="left">
+	<h4 id="hotline">Ðường dây nóng<br />
+		<span id="PageFooter1_lblHotline"></span>
+	</h4>
+	<h4 style="FONT-SIZE:12px;right:11px;POSITION:absolute;TOP:20px">
+		<a id="PageFooter1_GoHome_ibnGoHome" href="javascript:__doPostBack('PageFooter1$GoHome$ibnGoHome','')" style="color:White;">Trang chủ</a>
+
+		|
+		<a id="PageFooter1_SignOut_ibnLogout" href="javascript:__doPostBack('PageFooter1$SignOut$ibnLogout','')" style="color:White;">Thoát</a>
+
+		| <a style="COLOR:white" href="./support/default.aspx" target="_blank">Hỏi đáp</a>
+		| <a style="COLOR:white" href="/CMCSoft.IU.Web.Info/WebHelp/NewProject1.htm" target="_blank">Trợ giúp</a>
+	</h4>
+</div>
+<div id="footer_2"></div>
+<table align="center" bgcolor="white" style="PADDING-LEFT:5px;WIDTH:100%">
+	<tbody><tr>
+		<td align="right" width="533">
+			<span id="PageFooter1_lblEmail"><a href="#" onclick="javascript:window.print()"><div style="FLOAT:left">	<img src="/CMCSoft.IU.Web.Info/images/print.png" border="0" /></div><div style="FLOAT:left;PADDING-TOP:6px">In trang này</div></a><a href="mailto:?subject=He thong thong tin IU&amp;body=http://qldt.actvn.edu.vn/CMCSoft.IU.Web.info/StudyRegister/StudyRegister.aspx"><div style="FLOAT:left"><img src="/CMCSoft.IU.Web.Info/images/sendemail.png" border="0" /></div><div style="FLOAT:left;PADDING-TOP:6px">Gửi email trang này</div></a><a href="#" onclick="javascript:addfav()"><div style="FLOAT:left"><img src="/CMCSoft.IU.Web.Info/images/addtofavorites.png" border="0" /></div><div style="FLOAT:left;PADDING-TOP:6px">Thêm vào ưa thích</div></a></span>
+		</td>
+		<td width="604">
+			<div style="FONT-WEIGHT:bold;FONT-SIZE:12px" align="left">
+				<span id="PageFooter1_lblCopyrightNotice"></span>
+				<span id="PageFooter1_lblLastUpdate"></span>
+				<span id="PageFooter1_lblVersion"></span>
+			</div>
+			
+		</td>
+		
+		<td align="right" width="410">
+			<p><a id="PageFooter1_hpUserOnlineList" href="../UserOnlineList.aspx" target="_blank">Số người đang Online:</a>				
+				7
+			</p>
+			<p>Lượt truy cập:
+				8610
+			</p>
+		</td>
+	</tr>
+</tbody></table>
+
+</div>
+			
+     
+<script language="javascript">alert("Đã hết hạn đăng ký học trực tuyến");</script></form>	
+  
+
+</body></html>
