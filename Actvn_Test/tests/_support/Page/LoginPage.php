@@ -51,4 +51,14 @@ class LoginPage
 	 * @var string
 	 */
 	public static $login = 'Đăng nhập';
+
+	/**
+	 * @var string
+	 */
+	public static $messWrongPass = 'Bạn đã nhập sai tên hoặc mật khẩu!';
+
+	/**
+	 * @var string
+	 */
+	public static $messWrongUser = 'Tên đăng nhập không đúng!';
 }
